@@ -1,2 +1,5 @@
-# seqSearch-
+# seqSearch
 seqSearch is a novel Python script that searches input sequences in multi-FASTA format for motifs that are found in more than one sequence. . Motifs found in each sequence are recorded and used to excerpt the gene each motif is found in when mapped to its associated GenBank file
+
+
+To perform analysis, seqSearch requires sequences in FASTA format as well as the GenBank file of each respective sequence. Following this, the entirety of each sequence is surveyed using two potential methods, motifSurvey and motifCheck. motifSurvey uses the sliding window approach in which users provide a window size and all potential motifs matching that window size are discovered. motifCheck allows users to provide motif input(s), recording positions that match the specific motif input(s). seqSearch uses a dictionary framework, whereby all unique sequences of a given length are identified and stored in a dictionary. From this initial dictionary motifs are identified based on user defined criteria and using regular expression (regex) notation to allow for variation within a motif.
